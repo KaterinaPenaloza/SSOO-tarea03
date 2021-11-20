@@ -15,8 +15,12 @@ se implementó el algoritmo en python xq es mi lenguaje favorito y es facil, me 
 se tradujo a c++ :/
 utilize el ciclo while para mostrar los numeros por pantalla, ya que no vi otro modo de hacerlo, asi se me hizo mas facil en vez de usar recursion que ni se usarlo
 lurego de tener esas  funciones listas se procede a hacer el resto, re facil
-para que los procesos se ejecuten paralelamente, se hizo uso de threads 
+para que los procesos se ejecuten paralelamente, se hizo uso del fork()
 para coordinarlos el chrono sleep o algo asi
 se hizo un periodo de tsteo del programa
+
+//20-11
+https://en.wikipedia.org/wiki/Signal_(IPC)#Handling_signals  aqui dice que para handle las signals hay que usar signal(2) or sigaction(2) entonces asi se pudo handlear las señales SIGUSR1 y SIGUSR2 que antes no funcionaban porque hacian su accion por defecto pero ahora si se puede y funciona bien
+
 eso.
 finalmente se investigo acerca de los make y makefile que ni idea de eso, de hecho todavia  no se xd
